@@ -10,6 +10,7 @@ const Projects = () => {
       <div className="flex flex-wrap gap-5 justify-center items-center">
         {projectCardData.map((val, index) => (
           <Card
+            key={index}
             width={true}
             icon={val.imgsrc}
             text={val.title}
